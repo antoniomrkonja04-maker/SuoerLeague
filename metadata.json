@@ -1,0 +1,6 @@
+{
+  "name": "Career — Online Fußballkarriere",
+  "description": "Online-Fußballkarriere mit 30-Team-Liga, Snake Draft, FM26-Spielerpool, Squad Hub, Transferzentrale und gemeinsamem Saisonkalender.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

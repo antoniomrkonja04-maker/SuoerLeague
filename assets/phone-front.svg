@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 860" fill="none">
+  <defs>
+    <linearGradient id="frontTitanium" x1="0" y1="0" x2="420" y2="860" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#697179"/>
+      <stop offset="25%" stop-color="#2c3136"/>
+      <stop offset="50%" stop-color="#1a1d20"/>
+      <stop offset="78%" stop-color="#3e454c"/>
+      <stop offset="100%" stop-color="#16191c"/>
+    </linearGradient>
+    <radialGradient id="selfieLens" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#2b4f78"/>
+      <stop offset="60%" stop-color="#080c12"/>
+      <stop offset="100%" stop-color="#172230"/>
+    </radialGradient>
+  </defs>
+  <!-- Hardware Side Buttons -->
+  <rect x="4" y="156" width="4" height="36" rx="2" fill="#4f565d"/>
+  <rect x="4" y="216" width="4" height="64" rx="2" fill="#4f565d"/>
+  <rect x="4" y="294" width="4" height="64" rx="2" fill="#4f565d"/>
+  <rect x="412" y="238" width="4" height="96" rx="2" fill="#4f565d"/>
+
+  <!-- Outer Titanium Frame Ring (hollow screen center via fill-rule="evenodd") -->
+  <path fill-rule="evenodd" clip-rule="evenodd"
+    d="M68 6 H352 A60 60 0 0 1 412 66 V794 A60 60 0 0 1 352 854 H68 A60 60 0 0 1 8 794 V66 A60 60 0 0 1 68 6 Z M70 22 H350 A46 46 0 0 1 396 68 V792 A46 46 0 0 1 350 838 H70 A46 46 0 0 1 24 792 V68 A46 46 0 0 1 70 22 Z"
+    fill="url(#frontTitanium)" stroke="#7c858e" stroke-width="1.2"/>
+
+  <!-- Inner Obsidian Display Bezel -->
+  <path fill-rule="evenodd" clip-rule="evenodd"
+    d="M68 12 H352 A54 54 0 0 1 406 66 V794 A54 54 0 0 1 352 848 H68 A54 54 0 0 1 14 794 V66 A54 54 0 0 1 68 12 Z M70 22 H350 A46 46 0 0 1 396 68 V792 A46 46 0 0 1 350 838 H70 A46 46 0 0 1 24 792 V68 A46 46 0 0 1 70 22 Z"
+    fill="#07090b"/>
+
+  <!-- Top Earpiece Speaker Slit -->
+  <rect x="182" y="15" width="56" height="4" rx="2" fill="#1b2024"/>
+
+  <!-- Dynamic Island Cutout Pill -->
+  <rect x="148" y="32" width="124" height="34" rx="17" fill="#050708" stroke="#1b2126" stroke-width="1"/>
+  <circle cx="249" cy="49" r="7.5" fill="url(#selfieLens)" stroke="#161d24" stroke-width="1"/>
+  <circle cx="247" cy="47" r="2" fill="#7ec4ff" fill-opacity="0.55"/>
+  <circle cx="172" cy="49" r="5" fill="#0e1318"/>
+</svg>

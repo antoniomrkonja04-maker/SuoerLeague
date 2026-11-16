@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <rect width="120" height="120" rx="28" fill="#ffffff"/>
+  <path d="M0 28 A28 28 0 0 1 28 0 H92 A28 28 0 0 1 120 28 V42 H0 V28 Z" fill="#ef4444"/>
+  <text x="60" y="29" text-anchor="middle" fill="#ffffff" font-family="DM Sans, sans-serif" font-weight="800" font-size="15" letter-spacing="2">SAISON</text>
+  <text x="60" y="92" text-anchor="middle" fill="#111827" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="52">31</text>
+</svg>

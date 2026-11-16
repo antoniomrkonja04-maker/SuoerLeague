@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 740" fill="none">
+  <defs>
+    <linearGradient id="titaniumFrame" x1="0" y1="0" x2="360" y2="740" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#5a6065"/>
+      <stop offset="22%" stop-color="#2c3135"/>
+      <stop offset="50%" stop-color="#1d2023"/>
+      <stop offset="80%" stop-color="#3a4046"/>
+      <stop offset="100%" stop-color="#171a1d"/>
+    </linearGradient>
+    <linearGradient id="matteBack" x1="20" y1="20" x2="340" y2="720" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#282d31"/>
+      <stop offset="45%" stop-color="#1b1f22"/>
+      <stop offset="100%" stop-color="#121518"/>
+    </linearGradient>
+    <linearGradient id="glassSheen" x1="0" y1="0" x2="320" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.11"/>
+      <stop offset="45%" stop-color="#b6f36a" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="cameraPlateau" x1="34" y1="34" x2="188" y2="192" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#32383d"/>
+      <stop offset="100%" stop-color="#15181b"/>
+    </linearGradient>
+    <radialGradient id="lensGlass" cx="50%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#2c4a6f"/>
+      <stop offset="35%" stop-color="#0d1722"/>
+      <stop offset="75%" stop-color="#05080c"/>
+      <stop offset="100%" stop-color="#1a2430"/>
+    </radialGradient>
+    <filter id="plateauShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <!-- Side hardware buttons (left & right titanium rails) -->
+  <rect x="6" y="138" width="4" height="32" rx="2" fill="#464c52"/>
+  <rect x="6" y="192" width="4" height="56" rx="2" fill="#464c52"/>
+  <rect x="6" y="262" width="4" height="56" rx="2" fill="#464c52"/>
+  <rect x="350" y="210" width="4" height="82" rx="2" fill="#464c52"/>
+
+  <!-- Outer Titanium Frame -->
+  <rect x="10" y="8" width="340" height="724" rx="58" fill="url(#titaniumFrame)" stroke="#6c747a" stroke-width="1.5"/>
+  <!-- Inner Matte Textured Back Glass -->
+  <rect x="16" y="14" width="328" height="712" rx="52" fill="url(#matteBack)" stroke="#2e3438" stroke-width="1"/>
+  <!-- Subtle Diagonal Sheen -->
+  <path d="M68 14 H292 A52 52 0 0 1 344 66 V360 L16 520 V66 A52 52 0 0 1 68 14 Z" fill="url(#glassSheen)"/>
+
+  <!-- Pro Camera Module Plateau -->
+  <g filter="url(#plateauShadow)">
+    <rect x="34" y="34" width="154" height="158" rx="36" fill="url(#cameraPlateau)" stroke="#4c545b" stroke-width="1.5"/>
+  </g>
+
+  <!-- Lens 1: Top Left (Telephoto) -->
+  <g transform="translate(74, 74)">
+    <circle r="29" fill="#101316" stroke="#687178" stroke-width="3.5"/>
+    <circle r="23" fill="url(#lensGlass)" stroke="#232a30" stroke-width="1.5"/>
+    <circle r="9" fill="#06090e" stroke="#1e3550" stroke-width="1"/>
+    <ellipse cx="-6" cy="-7" rx="5" ry="3" transform="rotate(-25 -6 -7)" fill="#7cc0ff" fill-opacity="0.45"/>
+    <circle cx="5" cy="6" r="2.2" fill="#b6f36a" fill-opacity="0.35"/>
+  </g>
+
+  <!-- Lens 2: Bottom Left (Main Wide) -->
+  <g transform="translate(74, 150)">
+    <circle r="29" fill="#101316" stroke="#687178" stroke-width="3.5"/>
+    <circle r="23" fill="url(#lensGlass)" stroke="#232a30" stroke-width="1.5"/>
+    <circle r="10" fill="#06090e" stroke="#1e3550" stroke-width="1"/>
+    <ellipse cx="-6" cy="-7" rx="5" ry="3" transform="rotate(-25 -6 -7)" fill="#7cc0ff" fill-opacity="0.45"/>
+    <circle cx="5" cy="6" r="2.2" fill="#b6f36a" fill-opacity="0.35"/>
+  </g>
+
+  <!-- Lens 3: Middle Right (Ultra Wide) -->
+  <g transform="translate(146, 112)">
+    <circle r="29" fill="#101316" stroke="#687178" stroke-width="3.5"/>
+    <circle r="23" fill="url(#lensGlass)" stroke="#232a30" stroke-width="1.5"/>
+    <circle r="8.5" fill="#06090e" stroke="#1e3550" stroke-width="1"/>
+    <ellipse cx="-6" cy="-7" rx="5" ry="3" transform="rotate(-25 -6 -7)" fill="#7cc0ff" fill-opacity="0.45"/>
+  </g>
+
+  <!-- TrueTone Flash (Top Right of plateau) -->
+  <g transform="translate(146, 58)">
+    <circle r="11" fill="#dcd5c5" stroke="#50585e" stroke-width="1.5"/>
+    <circle r="7" fill="#fff4d2"/>
+  </g>
+
+  <!-- LiDAR Scanner (Bottom Right of plateau) -->
+  <g transform="translate(146, 165)">
+    <circle r="11" fill="#1c2024" stroke="#3c4348" stroke-width="1.5"/>
+    <circle r="8" fill="#0c0f12"/>
+  </g>
+
+  <!-- Mic Hole -->
+  <circle cx="169" cy="139" r="2.3" fill="#090b0d"/>
+
+  <!-- MagSafe & Center Career Emblem -->
+  <circle cx="180" cy="375" r="68" stroke="#ffffff" stroke-opacity="0.06" stroke-width="2"/>
+  <rect x="176" y="458" width="8" height="28" rx="4" fill="#ffffff" fill-opacity="0.06"/>
+  <g transform="translate(180, 375)">
+    <rect x="-26" y="-26" width="52" height="52" rx="15" fill="#b6f36a" fill-opacity="0.12" stroke="#b6f36a" stroke-opacity="0.35" stroke-width="1.5"/>
+    <text x="0" y="9" text-anchor="middle" fill="#b6f36a" fill-opacity="0.78" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="28">C</text>
+  </g>
+</svg>

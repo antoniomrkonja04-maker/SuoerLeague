@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="nightSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#010307"/>
+      <stop offset="38%" stop-color="#040914"/>
+      <stop offset="62%" stop-color="#0b1729"/>
+      <stop offset="100%" stop-color="#02050b"/>
+    </linearGradient>
+    <radialGradient id="bowlHaze" cx="50%" cy="54%" r="48%">
+      <stop offset="0%" stop-color="#93c5fd" stop-opacity="0.32"/>
+      <stop offset="45%" stop-color="#38bdf8" stop-opacity="0.14"/>
+      <stop offset="80%" stop-color="#0f172a" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#02040a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="towerGlowL" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.98"/>
+      <stop offset="18%" stop-color="#e0f2fe" stop-opacity="0.72"/>
+      <stop offset="45%" stop-color="#7dd3fc" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="beamConeL" x1="35%" y1="0%" x2="65%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.52"/>
+      <stop offset="35%" stop-color="#bae6fd" stop-opacity="0.24"/>
+      <stop offset="75%" stop-color="#38bdf8" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="beamConeR" x1="65%" y1="0%" x2="35%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.52"/>
+      <stop offset="35%" stop-color="#bae6fd" stop-opacity="0.24"/>
+      <stop offset="75%" stop-color="#38bdf8" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="pitchTurf" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2d5a3c"/>
+      <stop offset="30%" stop-color="#3a724b"/>
+      <stop offset="68%" stop-color="#316340"/>
+      <stop offset="100%" stop-color="#1b3b26"/>
+    </linearGradient>
+    <linearGradient id="standGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b1322"/>
+      <stop offset="50%" stop-color="#111c2f"/>
+      <stop offset="100%" stop-color="#070d18"/>
+    </linearGradient>
+    <linearGradient id="steelTruss" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#050a12"/>
+      <stop offset="50%" stop-color="#162436"/>
+      <stop offset="100%" stop-color="#03060c"/>
+    </linearGradient>
+    <pattern id="crowdTexture" width="16" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.1" fill="#94a3b8" fill-opacity="0.26"/>
+      <circle cx="9" cy="6" r="1" fill="#cbd5e1" fill-opacity="0.2"/>
+      <circle cx="14" cy="4" r="1.2" fill="#64748b" fill-opacity="0.32"/>
+      <circle cx="6" cy="8" r="0.9" fill="#e2e8f0" fill-opacity="0.18"/>
+    </pattern>
+    <pattern id="mowStripes" width="90" height="40" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="45" height="40" fill="#ffffff" fill-opacity="0.04"/>
+      <rect x="45" y="0" width="45" height="40" fill="#000000" fill-opacity="0.05"/>
+    </pattern>
+  </defs>
+
+  <!-- Night Sky & Ambient Bowl Haze -->
+  <rect width="1920" height="1080" fill="url(#nightSky)"/>
+  <ellipse cx="960" cy="590" rx="880" ry="380" fill="url(#bowlHaze)"/>
+
+  <!-- Distant Far Stand & Side Stands (Upper & Lower Tiers) -->
+  <polygon points="710,590 1210,590 1260,725 660,725" fill="url(#standGrad)"/>
+  <polygon points="710,590 1210,590 1260,725 660,725" fill="url(#crowdTexture)"/>
+  <polygon points="120,450 710,590 660,725 180,860" fill="url(#standGrad)"/>
+  <polygon points="120,450 710,590 660,725 180,860" fill="url(#crowdTexture)"/>
+  <polygon points="1800,450 1210,590 1260,725 1740,860" fill="url(#standGrad)"/>
+  <polygon points="1800,450 1210,590 1260,725 1740,860" fill="url(#crowdTexture)"/>
+
+  <!-- Tier Divider LED Ribbons -->
+  <line x1="700" y1="655" x2="1220" y2="655" stroke="#60a5fa" stroke-width="1.5" stroke-opacity="0.4"/>
+  <line x1="220" y1="590" x2="685" y2="675" stroke="#93c5fa" stroke-width="1.5" stroke-opacity="0.32"/>
+  <line x1="1700" y1="590" x2="1235" y2="675" stroke="#93c5fa" stroke-width="1.5" stroke-opacity="0.32"/>
+
+  <!-- Side Stand Roof Canopies (Left & Right) -->
+  <polygon points="240,395 665,495 650,515 210,435" fill="#0d1829" stroke="#334155" stroke-width="1"/>
+  <polygon points="1680,395 1255,495 1270,515 1710,435" fill="#0d1829" stroke="#334155" stroke-width="1"/>
+
+  <!-- Roof Floodlight Banks (Left & Right Canopies) -->
+  <g fill="#ffffff">
+    <circle cx="380" cy="442" r="5" opacity="0.92"/>
+    <circle cx="430" cy="454" r="5.5" opacity="0.95"/>
+    <circle cx="485" cy="467" r="5" opacity="0.9"/>
+    <circle cx="545" cy="480" r="5.5" opacity="0.94"/>
+    <circle cx="595" cy="491" r="4.5" opacity="0.88"/>
+
+    <circle cx="1540" cy="442" r="5" opacity="0.92"/>
+    <circle cx="1490" cy="454" r="5.5" opacity="0.95"/>
+    <circle cx="1435" cy="467" r="5" opacity="0.9"/>
+    <circle cx="1375" cy="480" r="5.5" opacity="0.94"/>
+    <circle cx="1325" cy="491" r="4.5" opacity="0.88"/>
+  </g>
+
+  <!-- Two Iconic Distant Floodlight Towers (37.4% and 62.1%) -->
+  <!-- Left Tower Structure -->
+  <g stroke="#475569" stroke-width="2" fill="none" opacity="0.75">
+    <line x1="706" y1="510" x2="700" y2="715"/>
+    <line x1="724" y1="510" x2="730" y2="715"/>
+    <path d="M705,535 L725,555 M725,535 L705,555 M704,575 L726,595 M726,575 L704,595 M703,615 L727,635 M727,615 L703,635"/>
+  </g>
+  <!-- Right Tower Structure -->
+  <g stroke="#475569" stroke-width="2" fill="none" opacity="0.75">
+    <line x1="1186" y1="510" x2="1180" y2="715"/>
+    <line x1="1204" y1="510" x2="1210" y2="715"/>
+    <path d="M1185,535 L1205,555 M1205,535 L1185,555 M1184,575 L1206,595 M1206,575 L1184,595 M1183,615 L1207,635 M1207,615 L1183,635"/>
+  </g>
+
+  <!-- Volumetric Floodlight Beams onto Pitch -->
+  <polygon points="718,520 420,860 1120,860" fill="url(#beamConeL)"/>
+  <polygon points="1195,520 800,860 1500,860" fill="url(#beamConeR)"/>
+  <polygon points="480,465 260,820 880,820" fill="url(#beamConeL)" opacity="0.65"/>
+  <polygon points="1440,465 1040,820 1660,820" fill="url(#beamConeR)" opacity="0.65"/>
+
+  <!-- Floodlight Headlamps & Halos -->
+  <circle cx="718" cy="528" r="115" fill="url(#towerGlowL)"/>
+  <circle cx="1195" cy="528" r="115" fill="url(#towerGlowL)"/>
+  <rect x="703" y="502" width="30" height="44" rx="3" fill="#ffffff" transform="rotate(-8 718 524)"/>
+  <rect x="1180" y="502" width="30" height="44" rx="3" fill="#ffffff" transform="rotate(8 1195 524)"/>
+
+  <!-- Green Floodlit Football Pitch in Perspective -->
+  <polygon points="665,726 1255,726 1460,965 460,965" fill="url(#pitchTurf)"/>
+  <polygon points="665,726 1255,726 1460,965 460,965" fill="url(#mowStripes)"/>
+
+  <!-- Pitch Markings (Perspective) -->
+  <g stroke="#e2e8f0" stroke-width="2" stroke-opacity="0.65" fill="none">
+    <!-- Outer touchlines & goal lines -->
+    <polygon points="688,734 1232,734 1408,948 512,948"/>
+    <!-- Halfway line -->
+    <line x1="608" y1="832" x2="1312" y2="832"/>
+    <!-- Center circle -->
+    <ellipse cx="960" cy="832" rx="108" ry="28"/>
+    <circle cx="960" cy="832" r="3" fill="#e2e8f0"/>
+    <!-- Far Penalty Box & 6-yard box & Goal -->
+    <polygon points="835,734 1085,734 1102,768 818,768"/>
+    <polygon points="900,734 1020,734 1026,748 894,748"/>
+    <rect x="932" y="720" width="56" height="14" stroke="#ffffff" stroke-width="2.2" stroke-opacity="0.9"/>
+    <!-- Near Penalty Box -->
+    <polygon points="755,948 1165,948 1135,892 785,892"/>
+  </g>
+
+  <!-- Massive Overhead Stadium Steel Roof Trusses (Framing Top, Left, Right) -->
+  <g fill="#040811" stroke="#1e293b" stroke-width="2">
+    <!-- Top Main Canopy Frame -->
+    <polygon points="0,0 1920,0 1920,440 1560,440 1370,225 550,225 360,440 0,440" fill="#030710"/>
+    <!-- Inner Truss Cutout & Girders -->
+    <polygon points="360,440 550,225 1370,225 1560,440 1640,440 1410,185 510,185 280,440" fill="url(#steelTruss)" stroke="#334155" stroke-width="1.5"/>
+  </g>
+
+  <!-- Detailed Steel Truss Lattice Work (Top & Corners) -->
+  <g stroke="#334155" stroke-width="2.2" stroke-opacity="0.72" fill="none">
+    <!-- Horizontal rafters -->
+    <line x1="180" y1="75" x2="1740" y2="75"/>
+    <line x1="250" y1="130" x2="1670" y2="130"/>
+    <line x1="330" y1="185" x2="1590" y2="185"/>
+    <line x1="530" y1="225" x2="1390" y2="225" stroke="#475569" stroke-width="3.5"/>
+    <!-- Diagonal Cross Bracing Top -->
+    <path d="M350,0 L460,225 M520,0 L590,225 M700,0 L735,225 M880,0 L895,225 M1040,0 L1025,225 M1220,0 L1185,225 M1400,0 L1330,225 M1570,0 L1460,225"/>
+    <path d="M460,0 L350,225 M590,0 L520,225 M735,0 L700,225 M895,0 L880,225 M1025,0 L1040,225 M1185,0 L1220,225 M1330,0 L1400,225 M1460,0 L1570,225"/>
+    <!-- Left Cantilever Gantry -->
+    <rect x="40" y="210" width="320" height="235" stroke="#1e293b" stroke-width="3"/>
+    <path d="M40,285 L360,285 M40,360 L360,360 M140,210 L140,445 M250,210 L250,445 M40,210 L360,445 M360,210 L40,445"/>
+    <!-- Right Cantilever Gantry -->
+    <rect x="1560" y="210" width="320" height="235" stroke="#1e293b" stroke-width="3"/>
+    <path d="M1560,285 L1880,285 M1560,360 L1880,360 M1670,210 L1670,445 M1780,210 L1780,445 M1560,210 L1880,445 M1880,210 L1560,445"/>
+  </g>
+
+  <!-- Foreground Cheering Supporters Silhouettes (Bottom Edge, Matching Reference Photo) -->
+  <g fill="#020409" stroke="#1e293b" stroke-width="1" stroke-opacity="0.45">
+    <!-- Far Left Supporter in Cap -->
+    <path d="M-20,1080 L-20,690 C10,670 45,655 85,660 C95,620 80,565 118,545 C155,528 195,555 202,585 C215,588 232,592 230,602 C210,606 196,608 192,625 C195,650 182,672 170,688 C215,725 255,815 268,940 L280,1080 Z"/>
+    <!-- Left-Center Supporters with Raised Fist -->
+    <path d="M240,1080 L255,860 C270,820 305,795 340,795 C332,765 335,728 365,722 C395,718 412,748 405,782 C435,792 465,825 478,875 L485,1080 Z"/>
+    <path d="M415,1080 L430,850 C445,805 475,785 505,785 C495,752 502,712 532,708 C562,705 578,738 570,775 C592,765 605,720 612,675 C616,652 602,638 615,625 C628,615 645,625 644,645 C642,695 632,765 612,815 L625,1080 Z"/>
+    <!-- Center Supporters Row -->
+    <path d="M585,1080 L605,865 C622,825 655,805 685,805 C672,768 680,722 715,718 C750,715 765,755 752,795 C785,810 810,850 820,910 L830,1080 Z"/>
+    <path d="M765,1080 L780,915 C795,882 820,868 845,868 C838,842 842,812 868,810 C892,808 902,835 895,865 C918,875 935,905 942,950 L950,1080 Z"/>
+    <path d="M905,1080 L922,905 C938,875 965,862 990,862 C982,835 988,802 1015,800 C1042,798 1052,828 1044,858 C1068,868 1088,900 1098,948 L1105,1080 Z"/>
+    <!-- Right-Center Supporters with Raised Arm -->
+    <path d="M1070,1080 L1090,865 C1108,822 1142,802 1175,802 C1165,765 1172,722 1208,718 C1242,715 1258,755 1245,795 C1268,782 1280,742 1285,702 C1288,682 1276,668 1288,655 C1302,645 1318,658 1316,678 C1314,725 1302,788 1282,835 L1295,1080 Z"/>
+    <path d="M1265,1080 L1285,895 C1302,855 1335,835 1368,835 C1358,802 1365,762 1398,758 C1430,755 1445,792 1434,828 C1462,842 1485,882 1495,935 L1505,1080 Z"/>
+    <path d="M1475,1080 L1495,885 C1512,845 1545,825 1578,825 C1568,792 1575,752 1608,748 C1640,745 1655,782 1644,818 C1672,832 1695,872 1705,925 L1715,1080 Z"/>
+    <!-- Far Right Supporter Silhouette -->
+    <path d="M1635,1080 L1665,785 C1685,725 1735,685 1795,675 C1775,625 1785,555 1835,540 C1885,525 1925,565 1918,625 C1935,655 1945,720 1945,820 L1945,1080 Z"/>
+  </g>
+</svg>
